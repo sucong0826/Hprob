@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hpb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="su.hm.hprob_master.MainActivity">
+
+    <su.hm.hprob.HorizontalProgressBar
+        android:id="@+id/hpb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hpb:inside_padding="0dp"
+        hpb:primary_color="@color/colorAccent"
+        hpb:primary_thickness="30dp"
+        hpb:shape="rect"
+        hpb:text_color="#000000"
+        hpb:text_enable="true"
+        hpb:text_size="16sp" />
+
+    <EditText
+        android:id="@+id/valueET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hpb"
+        android:layout_marginTop="10dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/set_percent" />
+
+</RelativeLayout>
